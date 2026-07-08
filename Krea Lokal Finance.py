@@ -32,7 +32,7 @@ FICHIER = "historique_krea.txt"
 # --- 3. LISTES ET MENUS ---
 liste_mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"]
 liste_entrees = ["Bagatelle", "Wapalapam", "Attitude", "Cap Tamarin", "GBLC", "Market", "Direct Sales"]
-liste_sorties = ["Let's C", "ClickNBuy", "Carpouron", "Gazella", "Temu", "Print Card", "Salaires", "MRA Payment", "MIPS", "Shopify", "Visa License", "Account", "Accountant payment", "Other"]
+liste_sorties = ["Account fees", "Shop rental", "MRA Payment", "Salaires", "Let's C", "ClickNBuy", "Carpouron", "Gazella", "Temu", "Print Card", "MIPS", "Shopify", "Visa License", "Accountant payment", "Other"]
 
 # --- 4. ZONE DE SAISIE ---
 st.subheader("📝 Ajouter une opération")
@@ -111,5 +111,3 @@ if os.path.exists(FICHIER):
         st.dataframe(df, use_container_width=True)
 else:
     st.info("Aucune donnée pour le moment.")
-
-
